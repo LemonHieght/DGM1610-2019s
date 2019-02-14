@@ -17,16 +17,21 @@ public class PlayerControl : MonoBehaviour
     void Update() 
     {
         if(Input.GetKey(KeyCode.D))
-            {
-             GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y); 
-            }
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y); 
+        }
     else if(Input.GetKey(KeyCode.A))
         {
-             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y); 
-         }
+            GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y); 
+        }
     else if(Input.GetKey(KeyCode.W))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2( GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
         }
+    else if(Input.GetKey(KeyCode.S))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, -jumpHeight);
+        }
+    
     }
 }
