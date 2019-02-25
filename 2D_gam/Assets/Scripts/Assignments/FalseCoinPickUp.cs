@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoinPickUp : BasicPickUp
+public class FalseCoinPickUp : BasicPickUp
 {
     public GameObject PC;
     void OnTriggerEnter2D(Collider2D other)

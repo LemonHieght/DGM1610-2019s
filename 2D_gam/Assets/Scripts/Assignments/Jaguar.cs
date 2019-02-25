@@ -11,12 +11,20 @@ public class Jaguar : Feline
     // Start is called before the first frame update
     void Start()
     {
-        print ("Rawr!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+     void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.name == "Player")
+        {
+            print ("Rawr!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            Destroy(other);
+        }
     }
 }
