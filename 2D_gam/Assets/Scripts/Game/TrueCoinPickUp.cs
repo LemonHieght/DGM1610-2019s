@@ -11,7 +11,7 @@ public class TrueCoinPickUp : MonoBehaviour
         if (other.name == "Player")
         {
             print("YOU STOLE MY MONEY!");
-           
+           ScoreManager.AddPoints(coinValue);
             Destroy(gameObject);
         }
     }
