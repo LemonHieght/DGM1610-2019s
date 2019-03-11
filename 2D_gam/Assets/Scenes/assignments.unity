@@ -459,6 +459,8 @@ GameObject:
   - component: {fileID: 1199071244}
   - component: {fileID: 1199071246}
   - component: {fileID: 1199071247}
+  - component: {fileID: 1199071248}
+  - component: {fileID: 1199071249}
   m_Layer: 0
   m_Name: tests
   m_TagString: Untagged
@@ -608,13 +610,53 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199071239}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2c14448563652c49b4871a8f88d08c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stopLight: Green
   isUtah: 0
+--- !u!114 &1199071248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199071239}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a09ab6c7a80e3749a53f09a960fb33f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  suspect: 
+  weapon: 
+  room: 
+  victim: 
+--- !u!114 &1199071249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199071239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844b6288299ba3c4bbcc9aa132593506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  client1: Zook
+  client2: Mulch
+  client3: Nott
+  client4: Grog
+  client5: Fairien
+  clientList:
+  - Zook
+  - Grog
+  - Nott
+  - Fairien
+  - Mulch
+  santaList: []
 --- !u!1 &1802303074
 GameObject:
   m_ObjectHideFlags: 0
