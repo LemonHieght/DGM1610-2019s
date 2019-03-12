@@ -50,11 +50,6 @@ public class PlayerControl : MonoBehaviour
         {
             Jump();
         }
-        if(Input.GetKeyDown(KeyCode.S) && !grounded)
-        {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, -jumpHeight);
-        }
-    
     }
     void Jump()
     {
