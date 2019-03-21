@@ -48,11 +48,8 @@ public class PlayerControl : MonoBehaviour
         //player movement up  and down
         if(Input.GetKeyDown(KeyCode.W) && grounded)
         {
-            Jump();
+           GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
         }
     }
-    void Jump()
-    {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
-    }
+
 }
