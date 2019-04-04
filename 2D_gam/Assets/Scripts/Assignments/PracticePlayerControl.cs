@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+public class PracticePlayerControl : MonoBehaviour
 {
     //player movement varables
    public float moveSpeed = 5;
