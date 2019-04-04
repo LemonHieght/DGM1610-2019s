@@ -4633,6 +4633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  walkSpeed: 4
 --- !u!212 &1272729320
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4670,8 +4671,8 @@ SpriteRenderer:
   m_SortingLayerID: -1009998385
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.7735849, g: 0.14960839, b: 0.22408977, a: 1}
+  m_Sprite: {fileID: 21300018, guid: 8283e35cae5714c46a9b403cc8677ec0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4690,7 +4691,7 @@ Transform:
   m_GameObject: {fileID: 1272729318}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.371, y: 3.371, z: 3.371}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
