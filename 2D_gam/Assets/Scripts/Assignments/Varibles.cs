@@ -1,30 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
 
-public class Varibles : MonoBehaviour {
-	// Varibles
-	public int number; 
-	public float speed;
-	public string name;
+// public class Varibles : MonoBehaviour {
+// 	// Varibles
+// 	public int number; 
+// 	public float speed;
+// 	public string name;
 
-	// Use this for initialization
-	void Start () {
-		/*
-		This 
-		a 
-		multi 
-		line 
-		comment
-		*/
-		number = 10;
-		speed = 0.94f;
-		name = "Bob";
-		print (name +" is "+ number +" years old "+ speed);
-	}
+// 	// Use this for initialization
+// 	void Start () {
+// 		/*
+// 		This 
+// 		a 
+// 		multi 
+// 		line 
+// 		comment
+// 		*/
+// 		number = 10;
+// 		speed = 0.94f;
+// 		name = "Bob";
+// 		print (name +" is "+ number +" years old "+ speed);
+// 	}
 	
-	// Update is called once per frame
-	void Update () {
-		transform.position = new Vector3 (number,0,0);
-	}
-}
+// 	// Update is called once per frame
+// 	void Update () {
+// 		transform.position = new Vector3 (number,0,0);
+// 	}
+// }
