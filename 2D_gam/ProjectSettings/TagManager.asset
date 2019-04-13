@@ -46,12 +46,18 @@ TagManager:
   - name: Ground
     uniqueID: 1414007659
     locked: 0
-  - name: Player
-    uniqueID: 3284968911
+  - name: Border overlay
+    uniqueID: 2790797245
     locked: 0
   - name: Boarder
     uniqueID: 3022929479
     locked: 0
+  - name: underlay border
+    uniqueID: 4200340079
+    locked: 0
   - name: Props
     uniqueID: 3843776665
+    locked: 0
+  - name: Player
+    uniqueID: 3284968911
     locked: 0
