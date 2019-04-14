@@ -7,16 +7,20 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public float walkSpeed;
     private Rigidbody2D myRigidbody;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //walking and movement
+        
         if(Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
             // transform.Translate (new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
@@ -41,6 +45,8 @@ public class PlayerController : MonoBehaviour
             myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, Input.GetAxisRaw("Vertical") * walkSpeed);
 
         }
+        //To stop ice skate sliding
+
         if(Input.GetAxisRaw("Horizontal") < 0.5f && Input.GetAxisRaw("Horizontal") > -0.5f)
         {
             myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y);
@@ -49,5 +55,8 @@ public class PlayerController : MonoBehaviour
         {
             myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 0f);
         }
+
+        anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
+        anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
     }
 }
