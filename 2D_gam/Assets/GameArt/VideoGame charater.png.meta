@@ -14,6 +14,10 @@ TextureImporter:
     21300018: VideoGame charater_9
     21300020: VideoGame charater_10
     21300022: VideoGame charater_11
+    21300024: VideoGame charater_12
+    21300026: VideoGame charater_13
+    21300028: VideoGame charater_14
+    21300030: VideoGame charater_15
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -132,13 +136,53 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db34ca954437b5f46a73375cd4e5aa9e
+      spriteID: 34d4edabeca158340bd13ea7f29b09d3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: VideoGame charater_1
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdc7d94d11f1ae4991f23f963856332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VideoGame charater_2
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a948fa3911360da418a7d2fd3ae1992a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VideoGame charater_3
       rect:
         serializedVersion: 2
         x: 9000
@@ -152,47 +196,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13dab2b403425024bbb12b7021ea4144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VideoGame charater_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 6000
-        width: 3000
-        height: 3000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eaa31d651661cb3438f037681959566a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VideoGame charater_3
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 6000
-        width: 3000
-        height: 3000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac2b8642c900f1944b297ee9d1fd33f9
+      spriteID: 22f433c8950c28145b7ff815350a670c
       vertices: []
       indices: 
       edges: []
@@ -201,6 +205,46 @@ TextureImporter:
       name: VideoGame charater_4
       rect:
         serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94d364b8d7d1bc4aac2e7628fe8e54b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VideoGame charater_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af919c1307256245994224ad761663a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VideoGame charater_6
+      rect:
+        serializedVersion: 2
         x: 6000
         y: 6000
         width: 3000
@@ -212,13 +256,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5196af0c72d97a24ea820396dd68f23b
+      spriteID: 4a645dcf107e2ef4680a05734496c710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VideoGame charater_5
+      name: VideoGame charater_7
       rect:
         serializedVersion: 2
         x: 9000
@@ -232,13 +276,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd7c13211bef9e148a697d1b451eb32f
+      spriteID: 8300f199e00cd8b4f8dc730034226e6d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VideoGame charater_6
+      name: VideoGame charater_8
       rect:
         serializedVersion: 2
         x: 0
@@ -252,13 +296,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 625d2518c1ea0504d910cc2d9ac97aab
+      spriteID: 2d0083eb63895954cb45214975dea8aa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VideoGame charater_7
+      name: VideoGame charater_9
       rect:
         serializedVersion: 2
         x: 3000
@@ -272,13 +316,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96b7c5a48b95b644cb419141b28c976a
+      spriteID: 0e54c01f4300ea641983fb0990d67d57
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VideoGame charater_8
+      name: VideoGame charater_10
       rect:
         serializedVersion: 2
         x: 6000
@@ -292,47 +336,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c32a55f568e3661439ad48f7a9d23322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VideoGame charater_9
-      rect:
-        serializedVersion: 2
-        x: 9000
-        y: 3000
-        width: 3000
-        height: 3000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94a9473c90c2aa64b82e155b7cc403e3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VideoGame charater_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3000
-        height: 3000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77572ea25f8d5ee4eb7c881625ecf9bf
+      spriteID: f83a60d97ccc2be42a9e9715b27ea834
       vertices: []
       indices: 
       edges: []
@@ -342,6 +346,26 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9000
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a241856477f584f9b2d697f5f3c80f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VideoGame charater_12
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 3000
         height: 3000
@@ -352,7 +376,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 258db6069d03ed643b00539600f85b7c
+      spriteID: 040843952ded58843a8014dc0fe284e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VideoGame charater_13
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a790b2e33d1b0294eab06687eaadff3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VideoGame charater_14
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffa3c90c7f88af4d8e57302cbb5dc02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VideoGame charater_15
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfa43ed05f5a944096ed7ae2cbc905c
       vertices: []
       indices: 
       edges: []
