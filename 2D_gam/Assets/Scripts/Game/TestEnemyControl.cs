@@ -45,26 +45,16 @@ public class TestEnemyControl : MonoBehaviour
             anim.SetBool("Move", true);
         }
 
-        //restarts the level over
-        if(reloading)
-        {
-            reloadWait -= Time.deltaTime;
-            if(reloadWait < 0)
-            {
-                Application.LoadLevel(Application.loadedLevel);
-                player.SetActive(true);
-            }
-        }
+        // //restarts the level over
+        // if(reloading)
+        // {
+        //     reloadWait -= Time.deltaTime;
+        //     if(reloadWait < 0)
+        //     {
+        //         Application.LoadLevel(Application.loadedLevel);
+        //         player.SetActive(true);
+        //     }
+        // }
     }
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        //"kills" the player by auto start new level
-        if(player)
-        {
-            //Destroy/kill Player
-            player.SetActive(false);
-            reloading = true;
 
-        }
-    }
 }

@@ -19,9 +19,9 @@ public class PlayerAttack : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        if(Input.GetKeyDown(KeyCode.F))
+        if(Input.GetButtonDown("Fire1"))
         {
-            Debug.Log("Fire");
+            print("Fire");
             if(other.gameObject.tag == "Enemy")
             {
 
