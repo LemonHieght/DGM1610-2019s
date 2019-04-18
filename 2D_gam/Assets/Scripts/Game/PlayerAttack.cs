@@ -21,12 +21,8 @@ public class PlayerAttack : MonoBehaviour
 
         if(Input.GetButtonDown("Fire1"))
         {
+            
             print("Fire");
-            if(other.gameObject.tag == "Enemy")
-            {
-
-                Destroy(other.gameObject);
-            }
         }
     }
 }
