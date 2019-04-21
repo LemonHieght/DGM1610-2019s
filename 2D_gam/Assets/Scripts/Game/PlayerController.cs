@@ -68,7 +68,20 @@ public class PlayerController : MonoBehaviour
             myRigidbody.velocity = Vector2.zero;
             anim.SetBool("Attack", true);
         }
+        if(attackTimeCounter > 0)
+        {
+            
+            attackTimeCounter -= Time.deltaTime;
+
+        }
         
+        if(attackTimeCounter <= 0)
+        {
+
+            attack = false;
+            anim.SetBool("Attack", false);
+        }
+
         //Animation transition
 
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
