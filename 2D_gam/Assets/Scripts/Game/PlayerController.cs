@@ -13,6 +13,11 @@ public class PlayerController : MonoBehaviour
     private bool attack;
     public float attackTime;
     private float attackTimeCounter;
+    public GameObject leftAttack;
+    public GameObject rightAttack;
+    public GameObject upAttack;
+    public GameObject downAttack;
+    public string dir = "down";
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +41,7 @@ public class PlayerController : MonoBehaviour
                 // transform.Translate (new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
                 myRigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, myRigidbody.velocity.y);
                 playerMove = true;
-                lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
+                lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f).normalized;
 
             }
         
@@ -45,7 +50,7 @@ public class PlayerController : MonoBehaviour
                 // transform.Translate ( new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
                 myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, Input.GetAxisRaw("Vertical") * moveSpeed);
                 playerMove = true;
-                lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
+                lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical")).normalized;
 
             }
         
@@ -59,6 +64,10 @@ public class PlayerController : MonoBehaviour
             {
                 myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 0f);
             }
+
+
+        //Attack
+
         }
         if(Input.GetKeyDown(KeyCode.F))
         {
@@ -67,6 +76,25 @@ public class PlayerController : MonoBehaviour
             attack = true;
             myRigidbody.velocity = Vector2.zero;
             anim.SetBool("Attack", true);
+
+            //Attack Colliders
+
+            if(dir == "left")
+            {
+                rightAttack.SetActive(true);
+            }
+            else if(dir == "right")
+            {
+                leftAttack.SetActive(true);
+            } else if(dir == "up")
+            {
+                upAttack.SetActive(true);
+            }
+            else if(dir == "down")
+            {
+                downAttack.SetActive(true);
+            }
+
         }
         if(attackTimeCounter > 0)
         {
@@ -80,7 +108,28 @@ public class PlayerController : MonoBehaviour
 
             attack = false;
             anim.SetBool("Attack", false);
+            downAttack.SetActive(false);
+            upAttack.SetActive(false);
+            leftAttack.SetActive(false);
+            rightAttack.SetActive(false);
         }
+        
+        if(lastMove ==Vector2.left)
+            {
+                dir = "left";
+            }
+            else if(lastMove == Vector2.right)
+            {
+                dir = "right";
+            }
+            else if(lastMove == Vector2.up)
+            {
+                dir = "up";
+            }
+            else if(lastMove == Vector2.down)
+            {
+                dir = "down";
+            }
 
         //Animation transition
 

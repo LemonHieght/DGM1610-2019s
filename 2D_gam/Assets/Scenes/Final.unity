@@ -1544,7 +1544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &370035123
 Transform:
   m_ObjectHideFlags: 0
@@ -3107,7 +3107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &761361093
 Transform:
   m_ObjectHideFlags: 0
@@ -3169,7 +3169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &786087110
 Transform:
   m_ObjectHideFlags: 0
@@ -5895,6 +5895,11 @@ MonoBehaviour:
   moveSpeed: 5
   walkSpeed: 3
   attackTime: 0.3
+  leftAttack: {fileID: 370035122}
+  rightAttack: {fileID: 761361092}
+  upAttack: {fileID: 786087109}
+  downAttack: {fileID: 1535066800}
+  dir: down
 --- !u!212 &1272729320
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7107,7 +7112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1535066801
 Transform:
   m_ObjectHideFlags: 0
