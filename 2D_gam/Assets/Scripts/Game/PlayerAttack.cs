@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+
+    public int damageToGive;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +21,10 @@ public class PlayerAttack : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        if(Input.GetButtonDown("Fire1"))
+        if(other.gameObject.tag == "Enemy")
         {
             
-            print("Fire");
+            other.gameObject.GetComponent<EnemyHealth>().HurtEnemy(damageToGive);
         }
     }
 }

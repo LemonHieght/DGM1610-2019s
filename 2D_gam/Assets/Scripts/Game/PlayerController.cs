@@ -79,11 +79,11 @@ public class PlayerController : MonoBehaviour
 
             //Attack Colliders
 
-            if(dir == "left")
+            if(dir == "right")
             {
                 rightAttack.SetActive(true);
             }
-            else if(dir == "right")
+            else if(dir == "left")
             {
                 leftAttack.SetActive(true);
             } else if(dir == "up")
