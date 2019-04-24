@@ -12,6 +12,7 @@ public class SpawnArea : MonoBehaviour
     public Vector3 size; 
     public int liveEnemys;
     public bool nextWave;
+    public int waveCounter;
 
 
     // Start is called before the first frame update
@@ -32,7 +33,7 @@ public class SpawnArea : MonoBehaviour
         if(waitTimeCounter <= 0)
         {
             SpawnEnemy();
-            spawnAmount += 1;
+            spawnAmount++;
             waitTimeCounter = waitTime;
             nextWave = false;
             
@@ -41,6 +42,7 @@ public class SpawnArea : MonoBehaviour
             {
                 waitTimeCounter = 1;
                 nextWave = true;
+                waveCounter++;
 
             }
     }
