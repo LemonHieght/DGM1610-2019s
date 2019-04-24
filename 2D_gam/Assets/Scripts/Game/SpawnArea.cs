@@ -40,7 +40,7 @@ public class SpawnArea : MonoBehaviour
         }
         if(liveEnemys <= 0 && !nextWave)
             {
-                waitTimeCounter = 1;
+                waitTimeCounter = 5;
                 nextWave = true;
                 waveCounter++;
 

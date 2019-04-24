@@ -45,6 +45,8 @@ public class TestEnemyControl : MonoBehaviour
             anim.SetBool("Move", true);
         }
 
+        
+
         // //restarts the level over
         // if(reloading)
         // {
