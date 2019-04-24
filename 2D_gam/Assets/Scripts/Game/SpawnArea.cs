@@ -5,18 +5,20 @@ using UnityEngine;
 public class SpawnArea : MonoBehaviour
 {
     public int spawnAmount = 1;
-    public float waitTime = 100;
+    public float waitTime;
     public float waitTimeCounter;
     public GameObject enemy;
     public Vector3 center;
     public Vector3 size; 
     public int liveEnemys;
+    public bool nextWave;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        waitTime = 100;
+        nextWave = false;
     }
 
     // Update is called once per frame
@@ -32,13 +34,15 @@ public class SpawnArea : MonoBehaviour
             SpawnEnemy();
             spawnAmount += 1;
             waitTimeCounter = waitTime;
-            if(liveEnemys == 0)
-            {
-                waitTimeCounter = 1;
-
-            }
+            nextWave = false;
             
         }
+        if(liveEnemys <= 0 && !nextWave)
+            {
+                waitTimeCounter = 1;
+                nextWave = true;
+
+            }
     }
 
     public void SpawnEnemy()
