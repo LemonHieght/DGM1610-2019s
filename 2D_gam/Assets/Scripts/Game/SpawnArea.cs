@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class SpawnArea : MonoBehaviour
 {
-    public int spawnAmount;
-    public float spawnTime;
-    public float spawnTimeCounter;
+    public int spawnAmount = 1;
+    public float waitTime = 100;
+    public float waitTimeCounter;
     public GameObject enemy;
     public Vector3 center;
     public Vector3 size; 
+    public int liveEnemys;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,16 +23,21 @@ public class SpawnArea : MonoBehaviour
     void Update()
     {
 
-        if(spawnTimeCounter > 0)
+        if(waitTimeCounter > 0)
         {
-            spawnTimeCounter -= Time.deltaTime;
+            waitTimeCounter -= Time.deltaTime;
         }
-        if(spawnTimeCounter <= 0)
+        if(waitTimeCounter <= 0)
         {
             SpawnEnemy();
-            spawnAmount += 2;
-            spawnTimeCounter = spawnTime;
+            spawnAmount += 1;
+            waitTimeCounter = waitTime;
+            if(liveEnemys == 0)
+            {
+                waitTimeCounter = 1;
 
+            }
+            
         }
     }
 
@@ -40,6 +47,7 @@ public class SpawnArea : MonoBehaviour
         {
             Vector3 pos = center + new Vector3(Random.Range(-size.x / 2, size.x /2), Random.Range(-size.y / 2, size.y / 2), 0f);
             Instantiate(enemy , pos, Quaternion.identity);
+            liveEnemys++;
         }
         
     }

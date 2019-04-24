@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-public int maxHealth;
+    public int maxHealth;
     public int currentHealth;
+    public SpawnArea spawnArea;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public int maxHealth;
         
         if(currentHealth <= 0f)
         {
-            
+            spawnArea.liveEnemys --;
             Destroy (gameObject);
             
 
