@@ -10,39 +10,47 @@ public class TestEnemyControl : MonoBehaviour
     private Animator anim;
     public float reloadWait;
     private bool reloading;
+    public bool hurt;
+    public float waitTime;
+    public float waitTimeCounter;
 
     // Start is called before the first frame update
     void Start()
     {
        //myRigidbody = GetComponent<Rigidbody2D>();
-       anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
+        waitTime = 0.5f;
+        waitTimeCounter = waitTime;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        //movement system
-        if(player.transform.position.x + 0.2f > gameObject.transform.position.x)
+        if(!hurt)
         {
-            gameObject.transform.position = new Vector2(gameObject.transform.position.x + moveSpeed * Time.deltaTime, gameObject.transform.position.y);
-            //myRigidbody.velocity = new Vector2(myRigidbody.velocity.x * moveSpeed, myRigidbody.velocity.y);
-            anim.SetBool("Move", true);
-        }
-        if(player.transform.position.x - 0.2f < gameObject.transform.position.x)
-        {
-            gameObject.transform.position = new Vector2(gameObject.transform.position.x - moveSpeed * Time.deltaTime, gameObject.transform.position.y);
-            anim.SetBool("Move", true);
-        }
-        if(player.transform.position.y + 0.2f > gameObject.transform.position.y)
-        {
-            gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + moveSpeed * Time.deltaTime);
-            anim.SetBool("Move", true);
-        }
-        if(player.transform.position.y - 0.2f < gameObject.transform.position.y)
-        {
-            gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - moveSpeed * Time.deltaTime);
-            anim.SetBool("Move", true);
+            //movement system
+            if(player.transform.position.x + 0.2f > gameObject.transform.position.x)
+            {
+                gameObject.transform.position = new Vector2(gameObject.transform.position.x + moveSpeed * Time.deltaTime, gameObject.transform.position.y);
+                //myRigidbody.velocity = new Vector2(myRigidbody.velocity.x * moveSpeed, myRigidbody.velocity.y);
+                anim.SetBool("Move", true);
+            }
+            if(player.transform.position.x - 0.2f < gameObject.transform.position.x)
+            {
+                gameObject.transform.position = new Vector2(gameObject.transform.position.x - moveSpeed * Time.deltaTime, gameObject.transform.position.y);
+                anim.SetBool("Move", true);
+            }
+            if(player.transform.position.y + 0.2f > gameObject.transform.position.y)
+            {
+                gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + moveSpeed * Time.deltaTime);
+                anim.SetBool("Move", true);
+            }
+            if(player.transform.position.y - 0.2f < gameObject.transform.position.y)
+            {
+                gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - moveSpeed * Time.deltaTime);
+                anim.SetBool("Move", true);
+            }
         }
 
         
@@ -57,6 +65,18 @@ public class TestEnemyControl : MonoBehaviour
         //         player.SetActive(true);
         //     }
         // }
+        if(hurt == true)
+        {
+            if(waitTimeCounter > 0)
+            {
+                waitTimeCounter -= Time.deltaTime;
+            }
+            if(waitTimeCounter <= 0)
+            {
+                hurt = false;
+            }
+        }
     }
+    
 
 }

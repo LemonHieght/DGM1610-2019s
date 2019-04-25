@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class SceneChanger : MonoBehaviour
 {
-    public SpawnArea spawnArea;
+    //public SpawnArea spawnArea;
     public int levelLoader;
     public Text score;
 
@@ -20,6 +20,6 @@ public class SceneChanger : MonoBehaviour
     }
     void Update()
     {
-        score.text = "You Lasted " + spawnArea.waveCounter +"Waves";
+        //score.text = "You Lasted " + spawnArea.waveCounter +"Waves";
     }
 }

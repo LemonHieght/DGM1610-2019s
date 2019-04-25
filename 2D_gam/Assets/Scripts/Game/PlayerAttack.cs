@@ -25,6 +25,7 @@ public class PlayerAttack : MonoBehaviour
         {
             
             other.gameObject.GetComponent<EnemyHealth>().HurtEnemy(damageToGive);
+            
         }
     }
 }
