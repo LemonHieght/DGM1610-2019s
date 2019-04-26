@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public int playerMaxHealth;
     public int playerCurrentHealth;
     public SpawnArea spawnArea;
+    public WaveReward waveReward;
 
     // Start is called before the first frame update
     void Start()

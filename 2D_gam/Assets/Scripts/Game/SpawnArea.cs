@@ -13,6 +13,9 @@ public class SpawnArea : MonoBehaviour
     public int liveEnemys;
     public bool nextWave;
     public int waveCounter;
+    public WaveReward waveReward;
+    public GameObject soul;
+    public bool soulSpawn;
 
 
     // Start is called before the first frame update
@@ -25,6 +28,14 @@ public class SpawnArea : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(waveCounter == 5 ||waveCounter == 10 || waveCounter == 15 || waveCounter == 20)
+        {
+            if(nextWave&& !soulSpawn)
+            {
+                SpawnSoul();
+                soulSpawn = true;
+            }
+        }
 
         if(waitTimeCounter > 0)
         {
@@ -43,6 +54,7 @@ public class SpawnArea : MonoBehaviour
                 waitTimeCounter = 5;
                 nextWave = true;
                 waveCounter++;
+                soulSpawn = false;
 
             }
     }
@@ -56,6 +68,11 @@ public class SpawnArea : MonoBehaviour
             liveEnemys++;
         }
         
+    }
+    public void SpawnSoul()
+    {
+        Vector3 pos = center + new Vector3(Random.Range(-size.x / 2, size.x /2), Random.Range(-size.y / 2, size.y / 2), 0f);
+        Instantiate(soul , pos, Quaternion.identity);
     }
 
     void OnDrawGizmosSelected()
