@@ -21,10 +21,12 @@ public class WaveReward : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D player)
     {
-        playerHealth.playerMaxHealth += 20;
-        playerHealth.playerCurrentHealth += 20;
+        if(player)
+        {
+            playerHealth.playerMaxHealth += 20;
+            playerHealth.playerCurrentHealth += 20;
 
-        Destroy(gameObject);
-        
+            Destroy(gameObject);
+        }
     }
 }
