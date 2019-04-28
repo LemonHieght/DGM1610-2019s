@@ -8,8 +8,6 @@ public class TestEnemyControl : MonoBehaviour
     public float moveSpeed;
     //private Rigidbody2D myRigidbody;
     private Animator anim;
-    public float reloadWait;
-    private bool reloading;
     public bool hurt;
     public float waitTime;
     public float waitTimeCounter;
@@ -27,6 +25,7 @@ public class TestEnemyControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(!hurt)
         {
             //movement system
@@ -34,22 +33,25 @@ public class TestEnemyControl : MonoBehaviour
             {
                 gameObject.transform.position = new Vector2(gameObject.transform.position.x + moveSpeed * Time.deltaTime, gameObject.transform.position.y);
                 //myRigidbody.velocity = new Vector2(myRigidbody.velocity.x * moveSpeed, myRigidbody.velocity.y);
-                anim.SetBool("Move", true);
+                anim.SetBool("Right", true);
+                anim.SetBool("Left", false);
             }
             if(player.transform.position.x - 0.2f < gameObject.transform.position.x)
             {
                 gameObject.transform.position = new Vector2(gameObject.transform.position.x - moveSpeed * Time.deltaTime, gameObject.transform.position.y);
-                anim.SetBool("Move", true);
+                anim.SetBool("Left", true);
+                anim.SetBool("Right", false);
+
             }
             if(player.transform.position.y + 0.2f > gameObject.transform.position.y)
             {
                 gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + moveSpeed * Time.deltaTime);
-                anim.SetBool("Move", true);
+
             }
             if(player.transform.position.y - 0.2f < gameObject.transform.position.y)
             {
                 gameObject.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - moveSpeed * Time.deltaTime);
-                anim.SetBool("Move", true);
+
             }
         }
 
