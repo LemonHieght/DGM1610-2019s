@@ -8,7 +8,7 @@ public class SceneChanger : MonoBehaviour
 {
     //public SpawnArea spawnArea;
     public int levelLoader;
-    public Text score;
+    //public Text score;
 
     public void LoadLevel()
     {
@@ -18,8 +18,8 @@ public class SceneChanger : MonoBehaviour
     {
         Application.Quit();
     }
-    void Update()
-    {
+    //void Update()
+    //{
         //score.text = "You Lasted " + spawnArea.waveCounter +"Waves";
-    }
+    //}
 }

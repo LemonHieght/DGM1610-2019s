@@ -6,6 +6,7 @@ public class PlayerAttack : MonoBehaviour
 {
 
     public int damageToGive;
+    // public GameObject damageBurst;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,8 @@ public class PlayerAttack : MonoBehaviour
         {
             
             other.gameObject.GetComponent<EnemyHealth>().HurtEnemy(damageToGive);
+            // Instantiate(damageBurst, transform.position, transform.rotation);
+            // Destroy(damageBurst);
             
         }
     }

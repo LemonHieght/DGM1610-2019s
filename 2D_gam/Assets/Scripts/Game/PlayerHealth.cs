@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
         {
             
             gameObject.SetActive(false);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
 
         }
     }
