@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\wille\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\wille\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_2D_gam.-541430621.00" t="ExcludeRecursive" />
+    <e p="C:\Will Lemmons\first year\DGM1610-2019s\2D_gam" t="IncludeRecursive">
+      <e p="2D_gam.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Assignments" t="Include">
+            <e p="Animal.cs" t="Include" />
+            <e p="Arraylists.cs" t="Include" />
+            <e p="BasicCameraControl.cs" t="Include" />
+            <e p="FalseCoinPickUp.cs" t="Include" />
+            <e p="Feline.cs" t="Include" />
+            <e p="FirstScript.cs" t="Include" />
+            <e p="Functions.cs" t="Include" />
+            <e p="If_Statements.cs" t="Include" />
+            <e p="Jaguar.cs" t="Include" />
+            <e p="MainMenu.cs" t="Include" />
+            <e p="OctopusControlsPC.cs" t="Include" />
+            <e p="PracticePlayerControl.cs" t="Include" />
+            <e p="ScoreManager.cs" t="Include" />
+            <e p="Switch.cs" t="Include" />
+            <e p="TrueCoinPickUp.cs" t="Include" />
+            <e p="Varibles.cs" t="Include" />
+          </e>
+          <e p="Game" t="Include">
+            <e p="EnemyHealth.cs" t="Include" />
+            <e p="HealthBar.cs" t="Include" />
+            <e p="HurtPlayer.cs" t="Include" />
+            <e p="Never Mind" t="Include">
+              <e p="BasicPickUp.cs" t="Include" />
+              <e p="MapGen.cs" t="Include" />
+              <e p="PointSystem.cs" t="Include" />
+              <e p="TileGeneration.cs" t="Include" />
+            </e>
+            <e p="PlayerAttack.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerHealth.cs" t="Include" />
+            <e p="SceneChanger.cs" t="Include" />
+            <e p="SpawnArea.cs" t="Include" />
+            <e p="TestEnemyControl.cs" t="Include" />
+            <e p="WaveCounter.cs" t="Include" />
+            <e p="WaveReward.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
