@@ -2,109 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb19812-34fe-435d-a03c-143bc2b658c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameArt/StartTemplet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameArt/StartTemplet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameArt/TileMap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameArt/TileMap.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameArt/VideoGame charater.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameArt/VideoGame charater.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameArt/enemy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameArt/enemy.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameArt/soul.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameArt/soul.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Final.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Final.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/TestEnemyControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/TestEnemyControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.AIModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.ARModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.AccessibilityModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.AnimationModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.AssetBundleModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.AudioModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.BaselibModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.ClothModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.ClusterInputModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.ClusterRendererModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.CoreModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.CrashReportingModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.DirectorModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.FileSystemHttpModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.GameCenterModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.GridModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.HotReloadModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.IMGUIModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.ImageConversionModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.InputModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.JSONSerializeModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.LocalizationModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.ParticleSystemModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.PerformanceReportingModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.Physics2DModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.PhysicsModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.ProfilerModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.ScreenCaptureModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.SharedInternalsModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.SpriteMaskModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.SpriteShapeModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.StreamingModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.StyleSheetsModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.SubstanceModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.TLSModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.TerrainModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.TerrainPhysicsModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.TextCoreModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.TextRenderingModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.TilemapModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.TimelineModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UIElementsModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UIModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UNETModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UmbraModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UnityAnalyticsModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UnityConnectModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UnityTestProtocolModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UnityWebRequestAudioModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UnityWebRequestModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UnityWebRequestTextureModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.UnityWebRequestWWWModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.VFXModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.VRModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.VehiclesModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.VideoModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.WindModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.XRModule.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Managed/UnityEngine.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Resources/unity default resources" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/Resources/unity_builtin_extra" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/boot.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/globalgamemanagers" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/globalgamemanagers.assets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/level0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/level1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/level2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/resources.assets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/resources.assets.resS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/sharedassets0.assets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/sharedassets0.assets.resS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/sharedassets1.assets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/sharedassets1.assets.resS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/2D_gam_Data/sharedassets2.assets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/Mono/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/Mono/etc/mono/1.0/machine.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/Mono/etc/mono/2.0/Browsers/Compat.browser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/Mono/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/Mono/etc/mono/2.0/machine.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/Mono/etc/mono/2.0/settings.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/Mono/etc/mono/2.0/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/Mono/etc/mono/browscap.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/Mono/etc/mono/config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/Mono/etc/mono/mconfig/config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Finished Game/UnityCrashHandler64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerAttack.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +32,7 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/TestEnemyControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Game/PlayerAttack.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1XApwVvBbNiAeG7jn7dYhesFt4d" />
@@ -202,7 +101,7 @@
       <workItem from="1580498993062" duration="2056000" />
       <workItem from="1580505993826" duration="3251000" />
       <workItem from="1619796359719" duration="21000" />
-      <workItem from="1619796889342" duration="1378000" />
+      <workItem from="1619796889342" duration="1911000" />
     </task>
     <servers />
   </component>
