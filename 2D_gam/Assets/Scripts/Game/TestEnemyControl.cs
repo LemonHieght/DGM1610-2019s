@@ -6,7 +6,7 @@ public class TestEnemyControl : MonoBehaviour
 {
     public GameObject player;
     public float moveSpeed;
-    //private Rigidbody2D myRigidbody;
+    /*private Rigidbody2D myRigidbody;*/
     private Animator anim;
     public bool hurt;
     public float waitTime;
@@ -15,7 +15,7 @@ public class TestEnemyControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       //myRigidbody = GetComponent<Rigidbody2D>();
+       /*myRigidbody = GetComponent<Rigidbody2D>();*/
         anim = GetComponent<Animator>();
         waitTime = 0.5f;
         waitTimeCounter = waitTime;
@@ -31,6 +31,7 @@ public class TestEnemyControl : MonoBehaviour
             //movement system
             if(player.transform.position.x + 0.2f > gameObject.transform.position.x)
             {
+                /*myRigidbody.AddForce((player.transform.position - transform.position).normalized * moveSpeed);*/
                 gameObject.transform.position = new Vector2(gameObject.transform.position.x + moveSpeed * Time.deltaTime, gameObject.transform.position.y);
                 //myRigidbody.velocity = new Vector2(myRigidbody.velocity.x * moveSpeed, myRigidbody.velocity.y);
                 anim.SetBool("Right", true);
