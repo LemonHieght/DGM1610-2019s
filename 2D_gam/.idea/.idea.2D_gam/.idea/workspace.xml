@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb19812-34fe-435d-a03c-143bc2b658c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D_gam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerAttack.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +102,7 @@
       <workItem from="1580498993062" duration="2056000" />
       <workItem from="1580505993826" duration="3251000" />
       <workItem from="1619796359719" duration="21000" />
-      <workItem from="1619796889342" duration="1911000" />
+      <workItem from="1619796889342" duration="2415000" />
     </task>
     <servers />
   </component>
