@@ -21,14 +21,9 @@ public class PlayerAttack : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-
         if(other.gameObject.tag == "Enemy")
         {
-            
             other.gameObject.GetComponent<EnemyHealth>().HurtEnemy(damageToGive);
-            // Instantiate(damageBurst, transform.position, transform.rotation);
-            // Destroy(damageBurst);
-            
         }
     }
 }

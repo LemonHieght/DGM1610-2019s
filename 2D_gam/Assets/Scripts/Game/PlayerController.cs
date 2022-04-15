@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public GameObject downAttack;
     public string dir = "down";
 
+    public Joystick joyCon;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,66 +38,71 @@ public class PlayerController : MonoBehaviour
             
             //walking and movement
         
-            if(Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+            if(joyCon.Horizontal > 0.1f)
             {
-                // transform.Translate (new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
-                myRigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, myRigidbody.velocity.y);
+                myRigidbody.velocity = new Vector2( moveSpeed, myRigidbody.velocity.y);
                 playerMove = true;
-                lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f).normalized;
-
+                lastMove = new Vector2(1f, 0f).normalized;
             }
-        
-            if(Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
+            else if (joyCon.Horizontal < -0.1f)
             {
-                // transform.Translate ( new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
-                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, Input.GetAxisRaw("Vertical") * moveSpeed);
+                myRigidbody.velocity = new Vector2( -moveSpeed, myRigidbody.velocity.y);
                 playerMove = true;
-                lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical")).normalized;
-
+                lastMove = new Vector2(-1f, 0f).normalized;
             }
-        
-            //To stop ice skate sliding
-
-            if(Input.GetAxisRaw("Horizontal") < 0.5f && Input.GetAxisRaw("Horizontal") > -0.5f)
+            else
             {
                 myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y);
             }
-            if(Input.GetAxisRaw("Vertical") < 0.5f && Input.GetAxisRaw("Vertical") > -0.5f)
+        
+            if(joyCon.Vertical > 0.1f)
+            {
+                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, moveSpeed);
+                playerMove = true;
+                lastMove = new Vector2(0f, 1f).normalized;
+            }
+            else if (joyCon.Vertical < -0.1f)
+            {
+                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, -moveSpeed);
+                playerMove = true;
+                lastMove = new Vector2(0f, -1f).normalized;
+            }
+            else
             {
                 myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 0f);
             }
 
 
-        //Attack
+            //Attack
 
         }
-        if(Input.GetKeyDown(KeyCode.F))
-        {
-
-            attackTimeCounter = attackTime;
-            attack = true;
-            myRigidbody.velocity = Vector2.zero;
-            anim.SetBool("Attack", true);
-
-            //Attack Colliders
-
-            if(dir == "right")
-            {
-                rightAttack.SetActive(true);
-            }
-            else if(dir == "left")
-            {
-                leftAttack.SetActive(true);
-            } else if(dir == "up")
-            {
-                upAttack.SetActive(true);
-            }
-            else if(dir == "down")
-            {
-                downAttack.SetActive(true);
-            }
-
-        }
+        // if(Input.GetKeyDown(KeyCode.F))
+        // {
+        //
+        //     attackTimeCounter = attackTime;
+        //     attack = true;
+        //     myRigidbody.velocity = Vector2.zero;
+        //     anim.SetBool("Attack", true);
+        //
+        //     //Attack Colliders
+        //
+        //     if(dir == "right")
+        //     {
+        //         rightAttack.SetActive(true);
+        //     }
+        //     else if(dir == "left")
+        //     {
+        //         leftAttack.SetActive(true);
+        //     } else if(dir == "up")
+        //     {
+        //         upAttack.SetActive(true);
+        //     }
+        //     else if(dir == "down")
+        //     {
+        //         downAttack.SetActive(true);
+        //     }
+        //
+        // }
         if(attackTimeCounter > 0)
         {
             
@@ -133,10 +140,38 @@ public class PlayerController : MonoBehaviour
 
         //Animation transition
 
-        anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
-        anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
+        anim.SetFloat("MoveX", joyCon.Horizontal);
+        anim.SetFloat("MoveY", joyCon.Vertical);
         anim.SetBool("Moving", playerMove);
         anim.SetFloat("LastX", lastMove.x);
         anim.SetFloat("LastY", lastMove.y);
+    }
+
+    public void Attack()
+    {
+        if (attack == false)
+        {
+            attackTimeCounter = attackTime;
+            attack = true;
+            myRigidbody.velocity = Vector2.zero;
+            anim.SetBool("Attack", true);
+
+            if (dir == "right")
+            {
+                rightAttack.SetActive(true);
+            }
+            else if (dir == "left")
+            {
+                leftAttack.SetActive(true);
+            }
+            else if (dir == "up")
+            {
+                upAttack.SetActive(true);
+            }
+            else if (dir == "down")
+            {
+                downAttack.SetActive(true);
+            }
+        }
     }
 }
